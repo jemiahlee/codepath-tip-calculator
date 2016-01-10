@@ -286,6 +286,7 @@
 				45F456741C420C1F00DD1A54 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

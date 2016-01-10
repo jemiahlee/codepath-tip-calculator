@@ -28,10 +28,10 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    @IBAction func billFieldChanged(sender: AnyObject) {
+    func recalculateTip() {
+        var billAmount = 0.0
         var tipPercentages = [0.15, 0.18, 0.20, 0.22]
         let tipPercentage = tipPercentages[tipControl.selectedSegmentIndex]
-        var billAmount = 0.0
 
         let billFieldValue = billField.text
         if billFieldValue != nil {
@@ -47,5 +47,12 @@ class ViewController: UIViewController {
         totalLabel.text = formatter.stringFromNumber(total)!
     }
 
+    @IBAction func tipChoiceChanged(sender: AnyObject) {
+        recalculateTip()
+    }
+
+    @IBAction func billFieldChanged(sender: AnyObject) {
+        recalculateTip()
+    }
 }
 
