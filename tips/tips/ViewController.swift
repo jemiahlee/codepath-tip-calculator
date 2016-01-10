@@ -21,6 +21,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         tipLabel.text = "$0.00"
         totalLabel.text = "$0.00"
+        billField.becomeFirstResponder()
 
         let defaults = NSUserDefaults.standardUserDefaults()
         if defaults.objectForKey("tipSelection") != nil {
