@@ -21,6 +21,11 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         tipLabel.text = "$0.00"
         totalLabel.text = "$0.00"
+
+        let defaults = NSUserDefaults.standardUserDefaults()
+        if defaults.objectForKey("tipSelection") != nil {
+            tipControl.selectedSegmentIndex = defaults.integerForKey("tipSelection")
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -49,6 +54,9 @@ class ViewController: UIViewController {
 
     @IBAction func tipChoiceChanged(sender: AnyObject) {
         recalculateTip()
+
+        let defaults = NSUserDefaults.standardUserDefaults()
+        defaults.setInteger(tipControl.selectedSegmentIndex, forKey: "tipSelection")
     }
 
     @IBAction func billFieldChanged(sender: AnyObject) {
