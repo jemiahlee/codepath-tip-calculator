@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		45EF45CE1C42E12F00546EC5 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EF45CD1C42E12F00546EC5 /* SettingsViewController.swift */; };
+		45EF45D01C4304D200546EC5 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EF45CF1C4304D200546EC5 /* AppConfig.swift */; };
 		45F456641C420C1F00DD1A54 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F456631C420C1F00DD1A54 /* AppDelegate.swift */; };
 		45F456661C420C1F00DD1A54 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F456651C420C1F00DD1A54 /* ViewController.swift */; };
 		45F456691C420C1F00DD1A54 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45F456671C420C1F00DD1A54 /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 
 /* Begin PBXFileReference section */
 		45EF45CD1C42E12F00546EC5 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		45EF45CF1C4304D200546EC5 /* AppConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
 		45F456601C420C1F00DD1A54 /* tips.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tips.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45F456631C420C1F00DD1A54 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		45F456651C420C1F00DD1A54 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				45F4566A1C420C1F00DD1A54 /* Assets.xcassets */,
 				45F4566C1C420C1F00DD1A54 /* LaunchScreen.storyboard */,
 				45F4566F1C420C1F00DD1A54 /* Info.plist */,
+				45EF45CF1C4304D200546EC5 /* AppConfig.swift */,
 			);
 			path = tips;
 			sourceTree = "<group>";
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				45F456661C420C1F00DD1A54 /* ViewController.swift in Sources */,
+				45EF45D01C4304D200546EC5 /* AppConfig.swift in Sources */,
 				45F456641C420C1F00DD1A54 /* AppDelegate.swift in Sources */,
 				45EF45CE1C42E12F00546EC5 /* SettingsViewController.swift in Sources */,
 			);
